@@ -207,7 +207,6 @@ def task_11(*args):
             return False
     
     return True
-
 # CODUL TĂU VINE MAI SUS:
 
 # VERIFICATION PROCESS
@@ -284,7 +283,7 @@ Exemplu: task_14('home', 'same', 'meme', sub_string="me") ➞ ['home', 'meme', '
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_14(sub_string , *args):
+def task_14( *args, sub_string):
     result = []
     for arg in args:
         if sub_string in arg:
@@ -304,7 +303,7 @@ Exemplu: task_15('home', 'same', 'meme', sub_string = 'me') ➞ {'contains': ['h
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_15(sub_string , *args):
+def task_15(*args, sub_string):
     contains = []
     doesnt = []
     for arg in args:
@@ -330,7 +329,7 @@ Exemplu: task_16(2, 3, 4, 5, operation='div') ➞ 0.008333333333333333
 """
 
 # CODUL TĂU VINE MAI JOS:
-def task_16(operation, *args):
+def task_16(*args, operation):
     if operation == 'add':
         result = 0
         for arg in args:
